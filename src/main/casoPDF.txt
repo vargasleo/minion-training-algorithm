@@ -1,0 +1,17 @@
+ia_48 -> sgg_7
+ia_48 -> ioc_37
+sgg_7 -> vhmw_89
+ioc_37 -> sgg_7
+ioc_37 -> phn_96
+ioc_37 -> vhmw_89
+phn_96 -> sgg_7
+phn_96 -> vhmw_89
+hax_88 -> ia_48
+hax_88 -> sgg_7
+hax_88 -> ioc_37
+hax_88 -> phn_96
+hax_88 -> vhmw_89
+dmb_83 -> ia_48
+dmb_83 -> sgg_7
+ebyr_80 -> ia_48
+ebyr_80 -> sgg_7
