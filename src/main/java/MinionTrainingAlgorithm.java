@@ -66,7 +66,7 @@ public class MinionTrainingAlgorithm {
                 this.addObstacle(a[0], Integer.parseInt(a[1]), 0);
                 this.addObstacle(b[0], Integer.parseInt(b[1]), 0);
                 this.addDependencie(b[0]);
-                this.addEdge(a[0],b[0]);
+                this.addEdge(a[0], b[0]);
             }
             this.evaluateTraining(filename);
         } catch (IOException e) {
@@ -217,30 +217,35 @@ public class MinionTrainingAlgorithm {
     }
 
     public void evaluateTraining(String caso) {
-        int t;
-        int minions = 0;
-        int tempo = 10000000;
+        int t = 0;
+        int auxM = 0;
+        int auxT = 10000000;
 
-        for (var i = 0; i < 101; i++) {
+        for (int j = 1; j < 101; j++) {
 
             List<Vertex> obstaculosCopy = new ArrayList<>();
             Map<Vertex, List<Vertex>> grafoCopy = new HashMap<>();
 
             copy(obstaculosCopy, grafoCopy);
 
-            t = practice(obstaculosCopy, grafoCopy, i);
+            t = practice(obstaculosCopy, grafoCopy, j);
+
+            //número ideal de minions para obter o menor tempo
+            // if(t < auxT){
+            // auxM = j;
+            // auxT = t;
+            // }
 
             // // número ideal de minions para ter o melhor aproveitamento no treinamento.
-            if (t < tempo) {
-                minions = i;
-                tempo = t;
+            if (t < auxT) {
+                auxM = j;
+                auxT = t;
             } else {
                 break;
             }
         }
-
         System.out.println(caso);
-        System.out.println("Minions: " + minions + " | " + "Tempo: " + tempo);
-        System.out.println("*-.._--''¨¨--_..-*-.._--''¨¨--_..-*");
+        System.out.println("USANDO " + auxM + " || " + "TEMPO: " + auxT);
+        System.out.println("=======================================================");
     }
 }
