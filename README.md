@@ -10,6 +10,6 @@ Implementing a directed graph of obstacles that must be overcome with the fewest
 6. When an obstacle is ready to be completed, one minion is sent for execution
 7. Minions prioritize obstacles by alfabetic order
 
-You can check the detailed problem statement [here](https://github.com/vargasleo/minion-training-algorithm/blob/master/problem-statement.pdf) (pt-br).
+## You can check the detailed problem statement [here](https://github.com/vargasleo/minion-training-algorithm/blob/master/problem-statement.pdf) (pt-br).
 
-And my complete report, containing time-complexity analysis of the algorithm, [here](https://github.com/vargasleo/minion-training-algorithm/blob/master/latex-report.pdf) (pt-br).
+## And my complete report, containing time-complexity analysis of the algorithm, [here](https://github.com/vargasleo/minion-training-algorithm/blob/master/latex-report.pdf) (pt-br).
